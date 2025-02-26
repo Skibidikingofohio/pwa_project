@@ -9,3 +9,6 @@
        {% endfor %}
    </ul>
    {% endblock %}
+   <h1>Welcome, {{ user.username }}!</h1>
+<p>Email: {{ user.email }}</p>
+<a href="{% url 'account_logout' %}">Logout</a>
